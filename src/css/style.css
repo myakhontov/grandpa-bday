@@ -52,8 +52,8 @@
 }
 
 .message {
-  height: 10rem;
-  width: 70rem;
+  height: 8rem;
+  width: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,12 +71,12 @@
 }
 
 .message-text {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0;
 }
 
 .arrow {
-  height: 15rem;
+  height: 12rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   opacity: 0;

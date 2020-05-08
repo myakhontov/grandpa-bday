@@ -40,8 +40,8 @@
 
 
 .message{
-    height: 10rem;
-    width: 70rem;
+    height: 8rem;
+    width: 60rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,12 +52,12 @@
 }
 
 .message-text{
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
 }
 
 .arrow{
-    height: 15rem;
+    height: 12rem;
     transform: rotate(90deg);
     opacity: 0;
     transition: all 1.5s;
