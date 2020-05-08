@@ -1,0 +1,42 @@
+@import"./variables";
+
+.slides{
+    height: 100vh;
+}
+
+.title{
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.traits{
+    margin-top: 2rem;
+    height: 60vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trait{
+    font-size: 6rem;
+    color: color(secondary);
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+
+.right{
+    align-self: flex-end;
+}
+
+.middle{
+    align-self: center;
+}
+
+/*text-shadow: 2px 2px 0 white,
+                -2px 2px 0 white,
+                2px -2px 0 white,
+               -2px -2px 0 white;*/
