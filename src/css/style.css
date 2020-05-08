@@ -10,7 +10,6 @@ body{
 }
 
 .intro{
-    border: 3px solid black;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -22,15 +21,32 @@ body{
     font-size: 7rem;
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
-    transform: translateY(28rem) scale(0.4);
+    transform: translateY(30rem) scale(0.4);
     transition: all 1.0s;
+    transition-delay: 0.7s;
 }
 
 .present{
-    height: 25rem;
-    width: 25rem;
-    z-index: 1;
+    height: auto;
+    width: auto;
+    margin-top: 10rem;
 }
+
+.present-cap{
+    height: 20rem;
+    z-index: 5;
+    transform: translate(50%, -11rem) rotate(0deg) scale(1);
+    
+    transition: all 1.0s;
+    
+}
+
+.present-bottom{
+    height: 14rem;
+    z-index: 4;
+    transform: translateX(-50%);
+}
+
 
 .message{
     height: 10rem;
@@ -52,3 +68,20 @@ body{
 .birthday-pop{
     transform: translateY(0rem) scale(1);
 }
+
+.present-open{
+    transform: translate(0rem, -9rem) rotate(-125deg) scale(0.8);
+}
+
+
+/*@keyframes present-open{
+    0%{
+        transform: translate(50%, -11rem) rotate(0deg) scale(1);
+    }
+    50%{
+        transform: translate(6rem, -14rem) rotate(-90deg) scale(0.8);
+    }
+    100%{
+        transform: translate(-1rem, -4rem) rotate(-150deg) scale(0.8);
+    }
+}*/
