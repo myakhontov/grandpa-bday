@@ -10,9 +10,9 @@
 
 .birthday{
     font-size: 7rem;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
     font-weight: 700;
-    transform: translateY(35rem) scale(0.4);
+    transform: translateY(35rem) scale(0.2);
     transition: all 1.0s;
     transition-delay: 0.7s;
 }
@@ -40,7 +40,7 @@
 
 
 .message{
-    height: 8rem;
+    height: 7rem;
     width: 60rem;
     display: flex;
     align-items: center;
@@ -53,8 +53,9 @@
 }
 
 .message-text{
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 .arrow{
