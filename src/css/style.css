@@ -1,78 +1,87 @@
-html{
-    padding: 0;
-    margin: 0;
-    font-size: 62.5%;
-    box-sizing: border-box;
+.intro {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body{
-    background-color: #FF9F1C;
+.birthday {
+  font-size: 7rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  -webkit-transform: translateY(30rem) scale(0.4);
+          transform: translateY(30rem) scale(0.4);
+  -webkit-transition: all 1.0s;
+  transition: all 1.0s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
-.intro{
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.present {
+  height: auto;
+  width: auto;
+  margin-top: 10rem;
 }
 
-.birthday{
-    font-size: 7rem;
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-    transform: translateY(30rem) scale(0.4);
-    transition: all 1.0s;
-    transition-delay: 0.7s;
+.present-cap {
+  height: 20rem;
+  z-index: 5;
+  /*-11rem*/
+  -webkit-transform: translate(50%, -10rem) rotate(0deg) scale(1);
+          transform: translate(50%, -10rem) rotate(0deg) scale(1);
+  -webkit-transition: all 1.0s;
+  transition: all 1.0s;
+  position: relative;
 }
 
-.present{
-    height: auto;
-    width: auto;
-    margin-top: 10rem;
+.present-bottom {
+  height: 14rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.present-cap{
-    height: 20rem;
-    z-index: 5;
-    transform: translate(50%, -11rem) rotate(0deg) scale(1);
-    
-    transition: all 1.0s;
-    
+.message {
+  height: 10rem;
+  width: 70rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FCBF49;
+  border-radius: 10px;
+  /*border: 1px solid black;*/
+  -webkit-box-shadow: 3px 5px 7px black;
+          box-shadow: 3px 5px 7px black;
 }
 
-.present-bottom{
-    height: 14rem;
-    z-index: 4;
-    transform: translateX(-50%);
+.message-text {
+  font-size: 5rem;
+  margin: 0;
 }
 
-
-.message{
-    height: 10rem;
-    width: 70rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FCBF49;
-    border-radius: 50px;
-    /*border: 1px solid black;*/
-    box-shadow: 3px 5px 7px black;
+.birthday-pop {
+  -webkit-transform: translateY(0rem) scale(1);
+          transform: translateY(0rem) scale(1);
 }
 
-.message-text{
-    font-size: 5rem;
-    margin: 0;
+.present-open {
+  -webkit-transform: translate(0rem, -9rem) rotate(-125deg) scale(0.8);
+          transform: translate(0rem, -9rem) rotate(-125deg) scale(0.8);
 }
-
-.birthday-pop{
-    transform: translateY(0rem) scale(1);
-}
-
-.present-open{
-    transform: translate(0rem, -9rem) rotate(-125deg) scale(0.8);
-}
-
 
 /*@keyframes present-open{
     0%{
@@ -85,3 +94,15 @@ body{
         transform: translate(-1rem, -4rem) rotate(-150deg) scale(0.8);
     }
 }*/
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FF9F1C;
+}
+/*# sourceMappingURL=style.css.map */
