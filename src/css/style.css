@@ -24,6 +24,8 @@
   transition: all 1.0s;
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
+  position: relative;
+  z-index: 3;
 }
 
 .present {
