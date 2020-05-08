@@ -26,17 +26,22 @@
     margin: 0;
     font-family: 'Pacifico', cursive;
     text-shadow: 2px 2px 2px black;
+    transition: all 1.0s;
 }
 
-.right{
-    align-self: flex-end;
+.left{
+    transform: translateX(-50vw);
 }
 
 .middle{
     align-self: center;
 }
 
-/*text-shadow: 2px 2px 0 white,
-                -2px 2px 0 white,
-                2px -2px 0 white,
-               -2px -2px 0 white;*/
+.right{
+    align-self: flex-end;
+    transform: translateX(50vw);
+}
+
+.slide{
+    transform: translateX(0vw);
+}
