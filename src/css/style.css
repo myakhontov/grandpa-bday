@@ -1,5 +1,5 @@
 .intro {
-  height: 70vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,8 +45,10 @@
 
 .present-bottom {
   height: 14rem;
+  z-index: 4;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  position: relative;
 }
 
 .message {
@@ -73,6 +75,17 @@
   margin: 0;
 }
 
+.arrow {
+  height: 15rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transition-delay: 3.0s;
+          transition-delay: 3.0s;
+}
+
 .birthday-pop {
   -webkit-transform: translateY(0rem) scale(1);
           transform: translateY(0rem) scale(1);
@@ -81,6 +94,10 @@
 .present-open {
   -webkit-transform: translate(0rem, -9rem) rotate(-125deg) scale(0.8);
           transform: translate(0rem, -9rem) rotate(-125deg) scale(0.8);
+}
+
+.fadeIn {
+  opacity: 1;
 }
 
 /*@keyframes present-open{
