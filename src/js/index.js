@@ -60,7 +60,7 @@ const website = ()=> {
         window.addEventListener('scroll', scrFuncRightOne)
         window.addEventListener('scroll', scrFuncRightTwo)
     }
-
+    
 
     //call all inner functions
     start()
