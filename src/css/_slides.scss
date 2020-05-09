@@ -1,7 +1,8 @@
 @import"./variables";
 
 .slides{
-    height: 100vh;
+    height: 150vh;
+    overflow: hidden;
 }
 
 .title{
@@ -13,7 +14,7 @@
 
 .traits{
     margin-top: 2rem;
-    height: 60vh;
+    height: 100vh;
     border: 3px solid black;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
 }
 
 .trait{
-    font-size: 6rem;
+    font-size: 9rem;
     color: color(secondary);
     margin: 0;
     font-family: 'Pacifico', cursive;
@@ -35,6 +36,7 @@
 
 .middle{
     align-self: center;
+    font-size: 6rem;
 }
 
 .right{
@@ -42,6 +44,12 @@
     transform: translateX(50vw);
 }
 
-.slide{
+.left-slide{
     transform: translateX(0vw);
+    margin-left: 2rem;
+}
+
+.right-slide{
+    transform: translateX(0vw);
+    margin-right: 2rem;
 }
