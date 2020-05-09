@@ -351,12 +351,13 @@
 .memories-sub {
   text-align: center;
   font-size: 4rem;
+  font-family: 'Roboto Slab', serif;
   margin: 0;
 }
 
 .gallery {
   position: relative;
-  height: 60vh;
+  height: 75vh;
   border: 3px solid black;
 }
 
@@ -366,6 +367,14 @@
 
 #uno-one {
   height: 15rem;
+}
+
+#table-pose {
+  height: 18rem;
+}
+
+#outside-max {
+  height: 20rem;
 }
 
 html {
