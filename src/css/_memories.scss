@@ -1,7 +1,7 @@
 @import"./variables";
 
 .memories{
-    height: 100vh;
+    height: 130vh;
 }
 
 .memories-title{
@@ -22,13 +22,14 @@
 
 .gallery{
     position: relative;
-    height: 75vh;
+    height: 100vh;
     border: 3px solid black;
 }
 
 .photo{
     border: 2rem color(lightprimary) solid;
     margin: 0;
+    box-shadow: 3px 3px 4px black;
 }
 
 #uno-one{
@@ -53,4 +54,32 @@
 
 #house-pose{
     height: 17rem;
+}
+
+#table-mom{
+    height: 17rem;
+}
+
+#fifty-pose{
+    height: 20rem;
+}
+
+#kiss{
+    height: 18rem;
+}
+
+#toast{
+    height: 21rem;
+}
+
+#old-kate{
+    height: 16rem;
+}
+
+#table-uno{
+    height: 17rem;
+}
+
+#xmas{
+    height: 15rem;
 }
