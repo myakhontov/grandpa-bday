@@ -1,0 +1,128 @@
+@import"./variables";
+
+.cards{
+    height: 115vh;
+}
+
+.cards-title{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.card-section{
+    height: 100vh;
+    margin-top: 2rem;
+    border: 3px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card{
+    height: 28rem;
+    width: 28rem;
+    position: relative;
+}
+
+.card-side{
+    height: 28rem;
+    width: 28rem;
+    backface-visibility: hidden;
+    box-shadow: 7px 6px 5px black;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-card{
+    margin-left: 5rem;
+}
+
+.right-card{
+    align-self: flex-end;
+    margin-right: 5rem;
+    transform: translateY(-4rem); //to fit in section
+}
+
+.card-side-front{
+    //background-color: color(secondary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.card-side-back{
+    background-color: color(lightprimary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+}
+
+.card-side-back p{
+    margin: 0;
+}
+
+.card:hover .card-side-front{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back{
+    transform: rotateY(0deg);
+}
+
+.dad .card-side-front {
+    background-image: /*linear-gradient(
+        to right bottom,
+        rgba(color(lightprimary), 0.15),
+        rgba(white, 0.1)
+
+    ),*/
+     url(../media/gpa-dad.jpg);
+}
+
+.dad .card-side-back p{
+    height: 17rem;
+    width: 27rem;
+}
+
+.kate .card-side-front{
+    background-image: url(../media/gpa-kate.jpg);
+}
+
+.kate .card-side-back p{
+    height: 15rem;
+    width: 23rem;
+    font-size: 1.5rem;
+}
+
+.mom .card-side-front{
+    background-image: url(../media/gpa-mom.jpg);
+}
+
+.mom .card-side-back p{
+    height: 17rem;
+    width: 27rem;
+}
+
+.michael .card-side-front{
+    background-image: url(../media/gpa-mike.jpg);
+}
+
+.michael .card-side-back p{
+    height: 19rem;
+    width: 24rem;
+    font-size: 1.4rem;
+}

@@ -13,9 +13,9 @@ const website = ()=> {
         })
     }
     const slides = ()=>{
-        const leftSlides = document.querySelectorAll('.left')
+        const leftSlides = document.querySelectorAll('.left-trait')
         const leftArr = Array.from(leftSlides)
-        const rightSlides = document.querySelectorAll('.right')
+        const rightSlides = document.querySelectorAll('.right-trait')
         const rightArr = Array.from(rightSlides)
         
         const scrFuncLeftOne = ()=>{

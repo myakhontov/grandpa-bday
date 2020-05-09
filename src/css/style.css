@@ -1,5 +1,4 @@
 .intro {
-  border: 3px black solid;
   height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +120,7 @@
   overflow: hidden;
 }
 
-.title {
+.slides-title {
   font-size: 6rem;
   text-align: center;
   font-family: 'Roboto Slab', serif;
@@ -154,7 +153,7 @@
   transition: all 1.0s;
 }
 
-.left {
+.left-trait {
   -webkit-transform: translateX(-50vw);
           transform: translateX(-50vw);
 }
@@ -166,7 +165,7 @@
   font-size: 8rem;
 }
 
-.right {
+.right-trait {
   -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-transform: translateX(50vw);
@@ -183,6 +182,148 @@
   -webkit-transform: translateX(0vw);
           transform: translateX(0vw);
   margin-right: 2rem;
+}
+
+.cards {
+  height: 115vh;
+}
+
+.cards-title {
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+.card-section {
+  height: 100vh;
+  margin-top: 2rem;
+  border: 3px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  height: 28rem;
+  width: 28rem;
+  position: relative;
+}
+
+.card-side {
+  height: 28rem;
+  width: 28rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 7px 6px 5px black;
+          box-shadow: 7px 6px 5px black;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  text-align: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-card {
+  margin-left: 5rem;
+}
+
+.right-card {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 5rem;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.card-side-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-side-back {
+  background-color: #FCBF49;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-side-back p {
+  margin: 0;
+}
+
+.card:hover .card-side-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.dad .card-side-front {
+  background-image: url(../media/gpa-dad.jpg);
+}
+
+.dad .card-side-back p {
+  height: 17rem;
+  width: 27rem;
+}
+
+.kate .card-side-front {
+  background-image: url(../media/gpa-kate.jpg);
+}
+
+.kate .card-side-back p {
+  height: 15rem;
+  width: 23rem;
+  font-size: 1.5rem;
+}
+
+.mom .card-side-front {
+  background-image: url(../media/gpa-mom.jpg);
+}
+
+.mom .card-side-back p {
+  height: 17rem;
+  width: 27rem;
+}
+
+.michael .card-side-front {
+  background-image: url(../media/gpa-mike.jpg);
+}
+
+.michael .card-side-back p {
+  height: 19rem;
+  width: 24rem;
+  font-size: 1.4rem;
 }
 
 html {

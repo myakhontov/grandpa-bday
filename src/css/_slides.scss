@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-.title{
+.slides-title{
     font-size: 6rem;
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -30,7 +30,7 @@
     transition: all 1.0s;
 }
 
-.left{
+.left-trait{
     transform: translateX(-50vw);
 }
 
@@ -39,7 +39,7 @@
     font-size: 8rem;
 }
 
-.right{
+.right-trait{
     align-self: flex-end;
     transform: translateX(50vw);
 }
