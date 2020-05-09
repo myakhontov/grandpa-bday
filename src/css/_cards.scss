@@ -75,14 +75,6 @@
     margin: 0;
 }
 
-.card:hover .card-side-front{
-    transform: rotateY(-180deg);
-}
-
-.card:hover .card-side-back{
-    transform: rotateY(0deg);
-}
-
 .dad .card-side-front {
     background-image: /*linear-gradient(
         to right bottom,
@@ -125,4 +117,12 @@
     height: 19rem;
     width: 24rem;
     font-size: 1.4rem;
+}
+
+.card:hover .card-side-front{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back{
+    transform: rotateY(0deg);
 }

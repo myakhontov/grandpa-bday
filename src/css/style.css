@@ -278,16 +278,6 @@
   margin: 0;
 }
 
-.card:hover .card-side-front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.card:hover .card-side-back {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-}
-
 .dad .card-side-front {
   background-image: url(../media/gpa-dad.jpg);
 }
@@ -324,6 +314,16 @@
   height: 19rem;
   width: 24rem;
   font-size: 1.4rem;
+}
+
+.card:hover .card-side-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 html {
