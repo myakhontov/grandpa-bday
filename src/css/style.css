@@ -335,7 +335,7 @@
 }
 
 .memories {
-  height: 115vh;
+  height: 110vh;
 }
 
 .memories-title {
@@ -357,7 +357,6 @@
 .gallery {
   position: relative;
   height: 85vh;
-  border: 3px solid black;
 }
 
 .photo {
@@ -492,6 +491,58 @@
           transform: translate(-50%, -50%) rotate(0deg);
   -webkit-box-shadow: 15px 15px 20px black;
           box-shadow: 15px 15px 20px black;
+}
+
+.love {
+  margin-top: 4rem;
+  height: 70vh;
+}
+
+.love-title {
+  text-align: center;
+  font-size: 9rem;
+  margin: 0;
+  color: #E71D36;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 5px 5px 6px black;
+}
+
+.heart {
+  height: 25rem;
+  -webkit-transform: translate(100%, 50%);
+          transform: translate(100%, 50%);
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: translate(100%, 50%) scale(1);
+            transform: translate(100%, 50%) scale(1);
+  }
+  to {
+    -webkit-transform: translate(100%, 50%) scale(1.9);
+            transform: translate(100%, 50%) scale(1.9);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: translate(100%, 50%) scale(1);
+            transform: translate(100%, 50%) scale(1);
+  }
+  to {
+    -webkit-transform: translate(100%, 50%) scale(1.9);
+            transform: translate(100%, 50%) scale(1.9);
+  }
 }
 
 html {

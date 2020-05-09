@@ -90,7 +90,6 @@ const website = ()=> {
         })
     }
     
-
     //call all inner functions
     start()
     slides()
@@ -98,5 +97,3 @@ const website = ()=> {
 } 
 //start web func
 website()
-//const x = document.querySelector('.slides')
-//console.log(x.offsetTop)

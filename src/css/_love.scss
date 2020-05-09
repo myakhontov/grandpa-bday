@@ -1,0 +1,30 @@
+@import"./variables";
+
+.love{
+    margin-top: 4rem;
+    height: 70vh;
+}
+
+.love-title{
+    text-align: center;
+    font-size: 9rem;
+    margin: 0;
+    color: color(secondary);
+    font-family: 'Pacifico', cursive;
+    text-shadow: 5px 5px 6px black;
+}
+
+.heart{
+    height: 25rem;
+    transform: translate(100%, 50%);
+    animation-name: heartbeat;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes heartbeat{ //25rem
+    from{transform: translate(100%, 50%) scale(1);}
+    to{transform: translate(100%, 50%) scale(1.9);}
+}
