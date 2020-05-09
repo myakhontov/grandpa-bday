@@ -63,7 +63,6 @@ const website = ()=> {
     const collage = ()=>{
         const getPhotos = document.querySelectorAll('.photo')
         const photoArr = Array.from(getPhotos)
-        console.log(photoArr)
         
         const getSrc = (image)=>{
             const x = image.src
@@ -78,9 +77,6 @@ const website = ()=> {
             //console.log(photoSrc)
             return photoSrc
         }
-
-        console.log(getSrc(photoArr[2]))
-        
 
         photoArr.forEach((photo)=>{
             photo.addEventListener('click',()=>{

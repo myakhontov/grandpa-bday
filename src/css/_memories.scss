@@ -32,6 +32,7 @@
     box-shadow: 3px 3px 4px black;
     position: absolute;
     z-index: 5;
+    width: auto;
     transition: all 1.0s;
 }
 
@@ -40,28 +41,28 @@
     top: 6rem;
     left: 2rem;
     z-index: 1;
-    transform: rotate(-20deg);
+    transform: translate(0rem, 0rem) rotate(-20deg);
 }
 
 #table-pose{
     height: 18rem;
     top: 3rem;
     left: 23rem;
-    transform: rotate(-4deg);
+    transform: translate(0rem, 0rem) rotate(-4deg);
 }
 
 #outside-max{
     height: 20rem;
     top: 5rem;
     left: 46rem;
-    transform: rotate(15deg);
+    transform: translate(0rem, 0rem) rotate(15deg);
 }
 
 #gpts-card{
     height: 19rem;
     top: 22rem;
     left: 5rem;
-    transform: rotate(12deg);
+    transform: translate(0rem, 0rem) rotate(12deg);
     z-index: 7;
 }
 
@@ -69,13 +70,14 @@
     height: 16rem;
     top: 25rem;
     left: 22rem;
+    transform: translate(0rem, 0rem) rotate(0deg);
 }
 
 #house-pose{
     height: 17rem;
     top: 25rem;
     left: 43rem;
-    transform: rotate(-11deg);
+    transform: translate(0rem, 0rem) rotate(-11deg);
     z-index: 1;
 }
 
@@ -83,14 +85,14 @@
     height: 17rem;
     top: 42rem;
     left: 3rem;
-    transform: rotate(-16deg);
+    transform: translate(0rem, 0rem) rotate(-16deg);
 }
 
 #fifty-pose{
     height: 20rem;
     top: 41rem;
     left: 26rem;
-    transform: rotate(5deg);
+    transform: translate(0rem, 0rem)  rotate(5deg);
 }
 
 #kiss{
@@ -98,14 +100,14 @@
     top: 42rem;
     left: 40rem;
     z-index: 3;
-    transform: rotate(10deg);
+    transform: translate(0rem, 0rem) rotate(10deg);
 }
 
 #toast{
     height: 21rem;
     top: 59rem;
     left: 3rem;
-    transform: rotate(14deg);
+    transform: translate(0rem, 0rem) rotate(14deg);
 }
 
 #old-kate{
@@ -113,6 +115,7 @@
     top: 62rem;
     left: 17rem;
     z-index: 1;
+    transform: translate(0rem, 0rem) rotate(0deg);
 }
 
 #table-uno{
@@ -120,14 +123,14 @@
     top: 61rem;
     left: 34rem;
     z-index: 3;
-    transform: rotate(-9deg);
+    transform: translate(0rem, 0rem) rotate(-9deg);
 }
 
 #xmas{
     height: 17rem;
     top: 61rem;
     left: 55rem;
-    transform: rotate(8deg)
+    transform: translate(0rem, 0rem) rotate(8deg)
 }
 
 #touchPhoto{
@@ -139,3 +142,4 @@
     transform: translate(-50%, -50%) rotate(0deg);
     box-shadow: 15px 15px 20px black;
 }
+
