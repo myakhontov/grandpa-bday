@@ -60,11 +60,45 @@ const website = ()=> {
         window.addEventListener('scroll', scrFuncRightOne)
         window.addEventListener('scroll', scrFuncRightTwo)
     }
+    const collage = ()=>{
+        const getPhotos = document.querySelectorAll('.photo')
+        const photoArr = Array.from(getPhotos)
+        console.log(photoArr)
+        
+        const getSrc = (image)=>{
+            const x = image.src
+            //console.log(x)
+            const y = x.split("/")
+            //console.log(y)
+            const z = y[y.length-1]
+            //console.log(z)
+            const w = z.split(".")
+            //console.log(w)
+            const photoSrc = w[0]
+            //console.log(photoSrc)
+            return photoSrc
+        }
+
+        console.log(getSrc(photoArr[2]))
+        
+
+        photoArr.forEach((photo)=>{
+            photo.addEventListener('click',()=>{
+                if(photo.id != "touchPhoto"){
+                    photo.id = "touchPhoto"
+                }else{
+                    photo.id = getSrc(photo)
+                }
+                //photo.id = "touchPhoto"
+            })
+        })
+    }
     
 
     //call all inner functions
     start()
     slides()
+    collage()
 } 
 //start web func
 website()
